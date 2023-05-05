@@ -48,30 +48,6 @@ const Skills = () => {
         </Container>
       </div>
     );
-    
-  
-
-  // return (
-  //   <Container>
-  //     <Row className="justify-content-center">
-  //       <Col md={8} className="mx-auto">
-  //         <h2>Skills</h2>
-  //         <h3>Front-End Proficiencies</h3>
-  //         <ListGroup>
-  //           {frontendProficiencies.map((proficiency, index) => (
-  //             <ListGroup.Item key={index}>{proficiency}</ListGroup.Item>
-  //           ))}
-  //         </ListGroup>
-  //         <h3>Back-End Proficiencies</h3>
-  //         <ListGroup>
-  //           {backendProficiencies.map((proficiency, index) => (
-  //             <ListGroup.Item key={index}>{proficiency}</ListGroup.Item>
-  //           ))}
-  //         </ListGroup>
-  //       </Col>
-  //     </Row>
-  //   </Container>
-  // );
 };
 
 export default Skills;

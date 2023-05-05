@@ -14,7 +14,7 @@ function Navigationbar({ currentPage, handlePageChange }) {
         <Navbar.Collapse id="navbar-nav" className="justify-content-end">
           <Nav>
             <Navbar.Brand id="navBarLinks" href="#aboutMe" className='p-2 m-1 navBar' onClick={() => handlePageChange('AboutMe')}>About Me</Navbar.Brand>
-            <Navbar.Brand id="navBarLinks" href="#portfolio" className='p-2 m-1 navBar' onClick={() => handlePageChange('Portfolio')}>Portfolio</Navbar.Brand>
+            <Navbar.Brand id="navBarLinks" href="#projects" className='p-2 m-1 navBar' onClick={() => handlePageChange('Projects')}>Projects</Navbar.Brand>
             <Navbar.Brand id="navBarLinks" href="#contact" className='p-2 m-1 navBar' onClick={() => handlePageChange('Contact')}>Contact Me</Navbar.Brand>
             <Navbar.Brand id="navBarLinks" href="#resume" className='p-2 m-1 navBar' onClick={() => handlePageChange('Resume')}>Resume</Navbar.Brand>
           </Nav>
