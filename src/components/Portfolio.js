@@ -5,6 +5,7 @@ import AboutMe from './pages/About';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
+import '../styles/style.css'
 
 export default function Portfolio() {
     
@@ -25,12 +26,15 @@ export default function Portfolio() {
 
     const handlePageChange = (page) => setCurrentPage(page);
 
-    return (
-        <div className=''>
-            <Navigationbar page={currentPage} handlePageChange={handlePageChange} />
-            <Footer />
-            {renderPage()}
+    const background = {
+        background: "#5C0099",
+    }
 
+    return (
+        <div className="vh-100" style={background}>
+            <Navigationbar page={currentPage} handlePageChange={handlePageChange} />
+            {renderPage()}
+            <Footer />
         </div>
     )
 }
