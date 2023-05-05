@@ -3,7 +3,7 @@ import Navigationbar from './Navbar';
 import Footer from './Footer';
 import AboutMe from './pages/About';
 import Contact from './pages/Contact';
-import Resume from './pages/Resume';
+import Skills from './pages/Resume';
 import Projects from './pages/Projects';
 import '../styles/style.css'
 
@@ -21,7 +21,7 @@ export default function Portfolio() {
         if(currentPage === "Contact"){
             return <Contact />
         }
-        return <Resume />
+        return <Skills />
     }
 
     const handlePageChange = (page) => setCurrentPage(page);
