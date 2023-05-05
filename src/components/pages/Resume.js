@@ -1,8 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import '../../styles/style.css'
+import Resume from '../../docs/Resume.docx';
+import '../../styles/style.css';
 
-const Resume = () => {
+const Skills = () => {
   const frontendProficiencies = [
     'HTML',
     'CSS',
@@ -30,15 +31,18 @@ const Resume = () => {
     return (
       <div className="d-flex justify-content-center align-items-center vh-100">
         <Container>
-          <h2 className="text-center mb-4">Skills</h2>
           <Row>
-            <Col md={6} className="text-center">
-              <h3>Front-End Proficiencies</h3>
-              <p>{frontendProficiencies.join(', ')}</p>
+          <Col md={12} className="text-center resumeText p-4">
+        <h1 className="resumeTitle">Resume</h1>
+        <div>Download my resume <a href={Resume} download={Resume}>here</a></div>
+          </Col>
+            <Col md={12} className="text-center resumeText p-4">
+              <h1 className="resumeTitle">Front-End Proficiencies</h1>
+              <div className="resumeText">{frontendProficiencies.join(', ')}</div>
             </Col>
-            <Col md={6} className="text-center">
-              <h3>Back-End Proficiencies</h3>
-              <p>{backendProficiencies.join(', ')}</p>
+            <Col md={12} className="text-center resumeText p-4">
+              <h1 className="resumeTitle">Back-End Proficiencies</h1>
+              <div className="resumeText">{backendProficiencies.join(', ')}</div>
             </Col>
           </Row>
         </Container>
@@ -70,7 +74,7 @@ const Resume = () => {
   // );
 };
 
-export default Resume;
+export default Skills;
 
 
 
