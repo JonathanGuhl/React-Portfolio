@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 
 .aboutTitle, .cardTitle {
     font-family: 'Shrikhand', cursive;
@@ -28,7 +28,7 @@
     color:rgb(222, 148, 29);
     font-size:20px;
     font-weight:bolder;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Shrikhand', cursive;
 }
 
 .cardContainer {
@@ -39,7 +39,7 @@
 .aboutContent {
     font-size: 20px;
     text-align: left;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Shrikhand', cursive;
     color: rgb(222, 148, 29);
     font-weight: bolder;
     margin: 0;
@@ -129,7 +129,20 @@ aboutcontainer {
   opacity: 1;
 }
 
+.projectCard { 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
 
+.projectCardBody {
+    background-color: black;
+    font-family: 'Shrikhand', cursive;
+    color:#ff8d13
+}
+
+.projectButton {
+    background: #ff8d13 !important;
+    color:#5C0099 !important;
+}
 
 
 
